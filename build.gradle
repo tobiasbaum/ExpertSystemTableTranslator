@@ -1,0 +1,25 @@
+apply plugin:'java'
+apply plugin:'eclipse'
+apply plugin:'application'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+tasks.compileJava.options.encoding = 'UTF-8'
+
+mainClassName = "de.dreidberater.daten.Main"
+
+sourceSets {
+   main {
+      java {
+         srcDir 'src'
+      }
+   }
+   test {
+      java {
+         srcDir 'test'
+      }
+   }
+}
+
+
